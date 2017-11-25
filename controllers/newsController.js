@@ -1,6 +1,9 @@
 var express = require("express");
 var mongojs = require("mongojs");
 var router = express.Router();
+var request = require("request");
+var cheerio = require("cheerio");
+var mongoose = require("mongoose");
 
 var databaseUrl = "rotoscraper";
 var collections = ["collectionPlaceholder"];
@@ -21,7 +24,6 @@ router.get("/", function(req, res) {
 
 /* TODO: make two more routes
  * -/-/-/-/-/-/-/-/-/-/-/-/- */
-
 // Route 1
 // =======
 // This route will retrieve all of the data
