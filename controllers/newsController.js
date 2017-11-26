@@ -11,7 +11,7 @@ var db = require("../models");
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/websiteScrapeMongoose", {
+mongoose.connect("mongodb://heroku_1c0p1ktv:b0sel8cnp2dchekqfvlr8c2jff@ds119486.mlab.com:19486/heroku_1c0p1ktv", {
   useMongoClient: true
 });
 

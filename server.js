@@ -9,6 +9,8 @@ var mongoose = require("mongoose");
 // Initialize Express
 var bodyParser = require("body-parser");
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
 var port = process.env.PORT || 3000;
 
 var app = express();
