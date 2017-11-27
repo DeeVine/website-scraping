@@ -12,7 +12,7 @@ var db = require("../models");
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/websiteScrapeMongoose";
-mongoose.connect('mongodb://heroku_1c0p1ktv:b0sel8cnp2dchekqfvlr8c2jff@ds119486.mlab.com:19486/heroku_1c0p1ktv', {
+mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
 
